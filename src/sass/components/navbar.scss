@@ -1,0 +1,40 @@
+//navbar styles
+#Navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+
+    h1 {
+        color: $redColor;
+        cursor: pointer;
+    }
+
+    .search-box {
+        display: inline-block;
+
+        input {
+            padding: .3rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+    }
+
+    .links {
+        margin-left: auto;
+
+        a {
+            margin-left: 1rem;
+            text-decoration: none;
+            padding: .5rem;
+
+            &:hover {
+                background-color: $redColor;
+                color: #fff;
+                border-radius: 8px;
+            }
+        }
+    }
+}

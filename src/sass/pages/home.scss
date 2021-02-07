@@ -1,0 +1,27 @@
+#Content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 1.5rem;
+}
+
+// homepage styles
+#Homepage {
+    margin: 1rem;
+
+    .blogs-preview {
+        padding: 10px 16px;
+        margin: 20px 0;
+        border-bottom: 1px solid #fafafa;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: $redColor;
+            margin-bottom: .5rem;
+        }
+    }
+}
