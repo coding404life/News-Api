@@ -8,6 +8,7 @@ const App = () => {
   const handleSearchInput = (e) => {
     setSearchTerms(e.target.value)
   }
+
   return (
     <div className="App">
       <Navbar handleSearchInput={handleSearchInput} />

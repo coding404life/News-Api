@@ -1,5 +1,5 @@
 #Content {
-    max-width: 600px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 1.5rem;
 }
@@ -7,6 +7,12 @@
 // homepage styles
 #Homepage {
     margin: 1rem;
+}
+
+// blog-list style
+.blog-list {
+    max-width: 60%;
+    margin: auto;
 
     .blogs-preview {
         padding: 10px 16px;
@@ -20,8 +26,14 @@
 
         h2 {
             font-size: 1.5rem;
-            color: $redColor;
+            color: #333;
             margin-bottom: .5rem;
         }
+
+        img {
+            margin: 1rem 0;
+        }
+
+
     }
 }
