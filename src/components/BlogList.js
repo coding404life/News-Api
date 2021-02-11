@@ -1,7 +1,8 @@
-const BLogList = ({ blogs, title, handleDelete }) => {
+const BLogList = ({ blogs, title, isLoading }) => {
     return (
         <div className="blog-list">
             <h2>{title}</h2>
+            {isLoading && <div>Loading...</div>}
             {blogs.map((blogs, index) => (
                 <div className="blogs-preview" key={index}>
                     <h2>{blogs.title}</h2>
