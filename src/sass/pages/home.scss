@@ -2,6 +2,33 @@
     max-width: 1200px;
     margin: 40px auto;
     padding: 1.5rem;
+
+    .blog-details {
+        max-width: 80%;
+        font-size: 20px;
+        margin-bottom: 1em;
+
+        p {
+            margin-top: 1rem;
+        }
+
+        img {
+            margin: 1rem 0;
+        }
+
+        div {
+            margin: 2rem 0;
+        }
+
+        button {
+            background-color: $redColor;
+            color: #fff;
+            border: 0;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    }
 }
 
 // homepage styles
@@ -33,6 +60,47 @@
             margin: 1rem 0;
         }
 
+        a {
+            text-decoration: none;
+        }
 
+    }
+}
+
+.create {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+    label {
+        text-align: left;
+        display: block;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        color: $redColor;
+        margin-bottom: 2rem;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 100%;
+        padding: 6px 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+        display: block;
+    }
+
+    button {
+        margin-top: 1rem;
+        background-color: $redColor;
+        color: #fff;
+        border: 0;
+        padding: 9px;
+        border-radius: 8px;
+        cursor: pointer;
     }
 }

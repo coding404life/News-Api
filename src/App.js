@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import CreateBlog from './components/Create'
+import BlogDetails from './components/BlogDetails';
+import NotFound from './components/NotFound';
+
 const App = () => {
   const [ searchTerms, setSearchTerms ] = useState('');
 
@@ -21,6 +24,12 @@ const App = () => {
             </Route>
             <Route path="/create">
               <CreateBlog />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
+            </Route>
+            <Route path='*'>
+              <NotFound />
             </Route>
           </Switch>
         </div>

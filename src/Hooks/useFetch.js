@@ -12,7 +12,7 @@ const useFetch = (url) => {
         axios.get(url)
             .then(res => {
                 if (!isRendered) {
-                    console.log(res);
+                    console.log(res.data.articles);
                     setData(res.data.articles);
                     setIsLoading(false);
                     setError(null)
